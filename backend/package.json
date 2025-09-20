@@ -5,9 +5,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon backend/server.js",
-    "start": "node backend/server.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+    "dev": "node init && nodemon backend/server.js",
+    "start": "node init && node backend/server.js",
+    "build": "node init && npm install && npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
